@@ -1,5 +1,11 @@
-﻿int value = (int)1.5m; // casting truncates
-Console.WriteLine(value);
-
-int value2 = Convert.ToInt32(1.5m); // converting rounds up
-Console.WriteLine(value2);
+﻿string value = "102";
+int result = 0;
+if (int.TryParse(value, out result))
+{
+   Console.WriteLine($"Measurement: {result}");
+}
+else
+{
+   Console.WriteLine("Unable to report the measurement.");
+}
+Console.WriteLine($"Measurement (w/ offset): {50 + result}");
