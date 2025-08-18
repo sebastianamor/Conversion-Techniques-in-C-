@@ -30,17 +30,18 @@
 //Console.WriteLine($"Message: {message}");
 //Console.WriteLine($"Total: {total}");
 
-
 int value1 = 11;
 decimal value2 = 6.2m;
 float value3 = 4.3f;
 
-// Your code here to set result1
-// Hint: You need to round the result to nearest integer (don't just truncate)
+// 1. Dividir value1 por value2 y redondear al entero más cercano
+int result1 = (int)Math.Round(value1 / value2);
 Console.WriteLine($"Divide value1 by value2, display the result as an int: {result1}");
 
-// Your code here to set result2
+// 2. Dividir value2 por value3 y mostrar como decimal
+decimal result2 = value2 / (decimal)value3;
 Console.WriteLine($"Divide value2 by value3, display the result as a decimal: {result2}");
 
-// Your code here to set result3
+// 3. Dividir value3 por value1 y mostrar como float
+float result3 = value3 / value1;
 Console.WriteLine($"Divide value3 by value1, display the result as a float: {result3}");
